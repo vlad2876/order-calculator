@@ -1,0 +1,23 @@
+<div class="container">
+  <select class="select" [(ngModel)]="type">
+    <option value="long">Лонг</option>
+    <option value="short">Шорт</option>
+  </select>
+  <input type="number" class="input" placeholder="Цена" [(ngModel)]="price">
+  <input type="number" class="input" placeholder="ATR" [(ngModel)]="atr">
+  <input type="number" class="input" placeholder="Риск" [(ngModel)]="risk">
+  <input type="number" class="input" placeholder="Количество стопов" [(ngModel)]="stopLossesNumber">
+  <button class="calculate-button" (click)="onCalculateButtonClick()">Рассчитать</button>
+  <div class="content-row">
+    <span>Стоп:</span>
+    <span>{{stopLossValue}}</span>
+  </div>
+  <div class="content-row">
+    <span>Тейк:</span>
+    <span>{{takeProfitValue}}</span>
+  </div>
+  <div class="content-row">
+    <span>Объем:</span>
+    <span>{{totalValue}}</span>
+  </div>
+</div>
