@@ -22,7 +22,6 @@
     color: white;
     border: none;
     border-radius: 5px;
-    margin-bottom: 10px;
     cursor: pointer;
   }
 
@@ -30,12 +29,7 @@
     padding: 10px;
     border: 1px solid #3498db;
     border-radius: 5px;
-    margin-bottom: 10px;
     font-size: 14px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   .calculate-button {
